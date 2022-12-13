@@ -286,10 +286,8 @@ header {
   padding-right: 5px;
   margin-top: 4px;
   margin-bottom: 10px;
-
   outline: none;
 }
-
 
 .form__person-icon {
   position: absolute;
@@ -307,6 +305,26 @@ header {
   position: absolute;
   left: 15px;
   top: 203px;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border: 1px solid var(--brand-color);
+}
+
+.form__input:hover + .form__person-icon,
+.form__input:focus + .form__person-icon {
+  fill: var(--brand-color);
+}
+
+.form__input:hover + .form__tel-icon,
+.form__input:focus + .form__tel-icon {
+  fill: var(--brand-color);
+}
+
+.form__input:hover + .form__envelope-icon,
+.form__input:focus + .form__envelope-icon {
+  fill: var(--brand-color);
 }
 
 .form__textarea {
@@ -328,6 +346,11 @@ header {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form__textarea:hover,
+.form__textarea:focus {
+  border: 1px solid var(--brand-color);
+}
+
 .form__tyc {
   display: flex;
   justify-content: center;
@@ -340,8 +363,17 @@ header {
   height: 19px;
   margin-top: 1px;
   margin-right: 9px;
-  color: var(--brand-color);
+}
+
+.form__checkbox:checked::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
   background-color: var(--brand-color);
+  background-image: url("../images/icons/icons.svg#check");
+  border: 2px solid white;
+  border-radius: 4px;
 }
 
 .form__terms-conditions {
