@@ -678,19 +678,20 @@
           </ul>
         </section>
         <section class="subscribe">
-          <form name="subscribe_form" autocomplete="on">
-            <div role="group" aria-labelledby="subscribe">
-              <h3 id="subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
-              <label
-                ><input
-                  type="email"
-                  name="subscribe_email"
-                  placeholder="Correo electrónico"
-              /></label>
-            </div>
-            <button type="submit">
+          <h3 id="subscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
+          <form class="subscribe_form" name="subscribe_form" autocomplete="on">
+            <label for="subs-email"></label>
+            <input
+              id="subs_email"
+              class="subs__email"
+              type="email"
+              name="subs_email"
+              placeholder="Correo electrónico"
+            />
+            <button class="subs__button" type="submit">
               Suscríbase
               <svg
+                class="subs__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24px"
                 height="24px"
