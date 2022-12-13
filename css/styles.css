@@ -198,6 +198,8 @@ header {
   margin-left: auto;
 }
 
+/* _______ ________ M O D A L _______ ________ */
+
 .backdrop {
   width: 100%;
   height: 100%;
@@ -219,7 +221,7 @@ header {
 
 .modal {
   width: 528px;
-  height: 581px;
+  height: 598px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -233,6 +235,7 @@ header {
 }
 
 .modal-close {
+  font-weight: 500;
   background-color: #fff;
   width: 30px;
   height: 30px;
@@ -243,6 +246,109 @@ header {
   position: absolute;
   top: 8px;
   right: 8px;
+}
+
+.modal-close:hover {
+  color: var(--brand-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  margin: 40px;
+  position: relative;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+}
+
+.form__icon {
+  /* position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-20%); */
+}
+
+.form__textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  resize: vertical;
+}
+
+.form__tyc {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.form__checkbox {
+  width: 20px;
+  height: 19px;
+  margin-top: 1px;
+  margin-right: 9px;
+  color: var(--brand-color);
+  background-color: var(--brand-color);
+}
+
+.form__terms-conditions {
+  text-align: start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--brand-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.form__button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 /* _______ ________ Table Section _______ ________ */
